@@ -1,0 +1,51 @@
+.friend {
+  padding: 2rem;
+  justify-content: center;
+  display: inline;
+
+  &__menu {
+    justify-content: center;
+    display: flex;
+  }
+
+  &__main {
+    padding: 1rem;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    .btn__text {
+      visibility: hidden;
+    }
+    h3 {
+      color: $color-tertiary;
+    }
+
+    &:hover {
+      border: 1px solid $color-black;
+      border-radius: 1rem;
+      background-color: $color-primary;
+      transform: scale(1.1);
+
+      h3 {
+        color: $color-black;
+      }
+
+      .btn__text {
+        visibility: visible;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__form {
+    padding-top: 4rem;
+  }
+
+  &__info {
+    border: 1px solid $color-tertiary;
+    margin: 0 auto;
+    width: 70%;
+    padding: 2rem;
+  }
+}
